@@ -20,7 +20,7 @@ Just delete after in the ER the non existing extention (I used it to export the 
 ```
 ```
 4) I made some changes in the flexi_responsive_template to display the Hosts nicely.
-Do not import responsive.cto use the c2gmanager.cto.
+Do not import responsive.cto use the c2gmanager.cto (copy it to the tl_files folder first). 
 ```
 ```
 5)As c2gadmin ist not working with "Request Tokens" you have to desactivate it in the Settings.
