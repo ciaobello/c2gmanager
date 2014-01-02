@@ -1,5 +1,6 @@
 ##c2g-manager (contao 2.11.13) installation
 
+(Contao2go for Linux & Osx ..)
 
 The DB, .cto and a contao_new.c2g file you can Download
 here >> https://github.com/ciaobello/c2gmanager
