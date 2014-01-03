@@ -21,19 +21,23 @@ Just delete after in the ER the non existing extention (I used it to export the 
 ```
 ```
 4) I made some changes in the flexi_responsive_template to display the Hosts nicely.
-Do not import responsive.cto use the c2gmanager.cto (copy it to the tl_files folder first). 
+Do not import responsive.cto use the c2g-manager_res.cto (copy it to the tl_files folder first). 
 ```
 ```
-5)As c2gadmin ist not working with "Request Tokens" you have to desactivate it in the Settings.
+6) extract the c2g-manager-tl_root.tar.gz archive in to the tl root.
+It will ovrewrite the german importC2GFile.php and make it english.
 ```
 ```
-6)If you want to start c2g-admin not as Localhost just add the IP to the Hosts File
+7)As c2gadmin ist not working with "Request Tokens" you have to desactivate it in the Settings.
+```
+```
+8)If you want to start c2g-admin not as Localhost just add the IP to the Hosts File
  and give a name you like. Mine is named c2g.
 So, with c2g as URL I start my conta2go >> c2g-manager gui.
 With c2g/vhosts/myproject i open the project i like quickly in the URL.
 ```
 ```
-7)Just import contao_new.c2g to your c2gmanager and restore the Project.
+9)Just import contao_new.c2g to your c2gmanager and restore the Project.
 You will get your first Host in the Overview (Hosts). 
 This project is empty and brings up 2 hidden scripts to automate
 the installation for yor forther Contao projects.
