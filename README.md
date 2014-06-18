@@ -12,7 +12,7 @@ A good idea would be: https://puphpet.com/
 ```
 ```
 2) Make sure you use the same Contao Version as the DB is made for.
-When i started the Project I made it with contao 2.11.13 (c2gadmin will just work in contao 2)
+When i started the Project I made it with contao 2.11.13 (c2gadmin extention will just work in contao 2)
 ```
 ```
 3) Install first the Extentions c2gadmin & flexi_responsive_template 
