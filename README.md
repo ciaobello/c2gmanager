@@ -37,6 +37,41 @@ So, with c2g as URL I start my conta2go >> c2g-manager gui.
 With c2g/vhosts/myproject i open the project i like quickly in the URL.
 ```
 ```
+*IMPORTANT*
+Essential that mod_rewrite works fine on you default Web is:
+How to permit changes in the .htaccess file:
+
+To allow the .htaccess file to override standard website configs,
+start by opening up the configuration file.
+NB: You will need sudo privileges for this step.
+
+----------------------------------------------
+sudo nano /etc/apache2/sites-available/default
+----------------------------------------------
+
+Once inside that file, find the following section,
+and change the line that says AllowOverride from None to All.
+The section should now look like this:
+
+ <Directory /var/www/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+ </Directory>
+
+After you save and exit that file, restart apache.
+
+.htacess files will now be available for all of your sites.
+
+----------------------------
+sudo service apache2 restart
+----------------------------
+
+Now you are all set up to rewrite your site’s URLs.
+
+```
+```
 9)Just import contao_new.c2g to your c2gmanager and restore the Project.
 You will get your first Host in the Overview (Hosts). 
 This project is empty and brings up 2 hidden scripts to automate
